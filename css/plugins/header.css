@@ -1,0 +1,67 @@
+/*mega menu start*/
+.megamenu-li {
+  position: static;
+}
+
+.megamenu {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  padding: 15px;
+}
+
+.navbar-container{
+    transition: 1s;
+    -webkit-transition:  1s;
+}
+
+/*mega menu end*/
+
+/*header start*/
+header {
+      width: 100%;
+      height: 100vh;
+      background: url(https://cdn.pixabay.com/photo/2018/04/21/10/01/job-3338102_1280.jpg) no-repeat 50% 50%;
+      background-size: cover;
+}
+/*header end*/
+
+/*contact form start*/
+#send input{
+  float: right;
+  display: block;
+  margin: 10px;
+  height: 90px;
+  width: 70px;
+  background-color: #404040;
+  color: white;
+  border-style: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: helvetica, arial;
+  letter-spacing: 2px;
+
+}
+
+.line {
+  margin-top: 10%;
+  height: 240px;
+  border-left: solid 1px black;
+}
+
+#input {
+  padding-top: 80px;
+}
+
+#input input {
+  margin: 20px 20px 40px 30px;
+  display: block;
+  font-size: 16px;
+  border: none;
+  border-bottom: dotted 2px black;
+font-family: helvetica;
+}
+/*contact form end*/
+

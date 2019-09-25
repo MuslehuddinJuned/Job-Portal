@@ -1,0 +1,23 @@
+/*-----------------------------------------------------------------------------------
+
+	Theme Name: SUSTipe Job Portal
+	Theme URI: http://
+	Description: Job Portal Multiple Page Template
+	Author: Muslehuddin Juned
+	Author URI: https://themeforest.net/user/muslehuddinjuned
+	Version: 1.0
+
+-----------------------------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+			[ All Css Plugins & Helper Classes File ]
+-----------------------------------------------------------------*/
+
+/* == Preloader == */
+@import url("plugins/preloader.css");
+
+/* == Header == */
+@import url("plugins/header.css");
+
+/* == login form == */
+@import url("plugins/login.css");
