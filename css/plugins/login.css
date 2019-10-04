@@ -42,7 +42,7 @@
 
 /* front pane, placed above back */
 .front {
-  z-index: 2;
+  z-index: 1;
 }
 
 /* back, initially hidden pane */
@@ -51,7 +51,7 @@
    -moz-transform: rotateY( 180deg );
      -o-transform: rotateY( 180deg );
         transform: rotateY( 180deg );
-        z-index: 3;
+        z-index: 2;
 }
 
  .front, .back {
@@ -79,12 +79,12 @@
 
 .login_btn {
     width: 100%;
-    background: #87CEFA !important;
+    background: #3A3E64 !important;
     color: white !important;
 }
 .login_btn:hover {
     font-weight: bold;
-    background: #3eb0f7 !important;
+    background: #313454 !important;
     color: white !important;
 }
 .login_btn:focus {
@@ -95,10 +95,10 @@
     padding: 0 15px;
 }
 .input-group-text {
-    background: #87CEFA !important;
+    background: #3A3E64 !important;
     color: white !important;
     border: 0 !important;
-    border-radius: 15px 0 0 15px !important;
+/*    border-radius: 15px 0 0 15px !important;*/
 }
 .input_user,
 .input_pass:focus {

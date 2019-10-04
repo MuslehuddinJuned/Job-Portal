@@ -4,6 +4,7 @@ $(document).ready(function() {
     $(".megamenu").on("click", function(e) {
         e.stopPropagation();
     });
+    
     $(window).on("scroll", function() {
     if($(window).scrollTop()) {
           $('nav').addClass('navbar-dark bg-dark');
@@ -14,6 +15,8 @@ $(document).ready(function() {
           $('nav').addClass('navbar-light bg-light');
           $('nav').removeClass('navbar-dark bg-dark');
     }
+        
+    
     });
     
     
@@ -55,3 +58,40 @@ $(window).on("load",function (){
     }
 // login end-------------------------------------------------
 
+//Start counter
+    $('.counter_section').on('inview', function(event, visible, visiblePartX, visiblePartY) {
+        if (visible) {
+            $(this).find('.timer').each(function () {
+                var $this = $(this);
+                $({ Counter: 0 }).animate({ Counter: $this.text() }, {
+                    duration: 2000,
+                    easing: 'swing',
+                    step: function () {
+                        $this.text(Math.ceil(this.Counter));
+                    }
+                });
+            });
+            $(this).off('inview');
+        }
+    });
+
+//end counter
+
+
+//Start for upload image
+
+function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            $('#blah')
+                .attr('src', e.target.result)
+                .width('50%');
+        };
+
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+//End for upload image

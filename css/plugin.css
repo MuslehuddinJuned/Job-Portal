@@ -21,3 +21,22 @@
 
 /* == login form == */
 @import url("plugins/login.css");
+
+/* == Price Tag == */
+@import url("plugins/priceTag.css");
+
+/* == animate == */
+@import url("plugins/animate.css");
+
+/* == reset mixitup == */
+/*@import url("plugins/reset.css");*/
+
+
+/* == Form CSS == */
+@import url("plugins/Form.css");
+
+/* == Browse CSS == */
+@import url("plugins/browse.css");
+
+/* == accordion CSS == */
+@import url("plugins/accordion.css");

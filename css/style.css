@@ -42,28 +42,295 @@ html, body {
 }
 
 body {
-      font-family: "Helvetica Neue",sans-serif;
-      font-weight: lighter;
+      font-family: Raleway !important;
+/*      font-weight: lighter;*/
 }
+
+/*Start For Bacground*/
+.bg_header{
+    background: #3A3E64 !important;
+    color: white !important;
+
+}
+
+.bg_content{
+    background: #DEDEDC !important;
+}
+
+.bg_contact{
+    background: #3a3e64 !important;
+    border-radius: 0px;
+}
+
+.bg_footer{
+    background: #313454 !important;
+    border-radius: 0px;
+}
+/*End For Bacground*/
+
 .box_shadow{
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	      -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	      -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            border-radius: 5px;
+            
 }
 
-.b_15 {
-  border-radius: 15px !important;
+.box_shadow_hover:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+              -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+              -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 2;
 }
-.b_15_1_0_0_1{
-  border-radius: 15px 0 0 15px !important;
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+    
+  margin-top: -25%;
+  margin-left: -25%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
 }
-.b_15_0_1_1_0{
-  border-radius: 0 15px 15px 0 !important;
+
+/*hover effect*/
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.2); }
+.growX {
+    border-radius: 15px;
+    border-right: 1rem solid #3a3e64;
+    
+  transition: width .5s;
+  -webkit-transition: width .5s;
+/*
+    transition:all .5s ease-in-out;
+*/
 }
-.b_15_1_1_0_0{
-  border-radius: 15px 0 !important;
+.growX:hover { width: 80%}
+
+.changeRadious{ 
+    border-radius: 15px;
+    transition: all .5s ease-in-out;  
+/*    color: whitesmoke;*/
+    background-color: #3a3e64; 
 }
-.b_15_0_0_1_1{
-  border-radius: 15px 0 !important;
+.changeRadious:hover{ 
+    border-radius: 50% !important;    
+/*    background-color: #24273f !important;*/
+    background: linear-gradient(to top right, #8388b7 0%, #3a3e64 100%);
+    color: white !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	      -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	      -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
 }
+
+
+
+
+/*style for border radious start*/
+@media (min-width: 750px) {
+    .b_15 {
+      border-radius: 15px !important;
+    }
+    .b_15_1001{
+      border-radius: 15px 0 0 15px !important;
+    }
+    .b_15_0110{
+      border-radius: 0 15px 15px 0 !important;
+    }
+    .b_15_1100{
+      border-radius: 15px 15px 0 0 !important;
+    }
+    .b_15_0011{
+      border-radius: 0 0 15px 15px!important;
+    }
+    .b_15_1000{
+       border-radius: 15px 0 0 0 !important; 
+    }
+    .b_15_0100{
+       border-radius: 0 15px 0 0 !important;
+    }
+    .b_15_0100{
+        border-radius: 0 15px 0 0 !important;
+    }
+    .b_15_0001{
+        border-radius: 0 0 0 15px !important;
+    }
+    .b_15_0010{
+        border-radius: 0 0 15px 0 !important;
+    }
+    
+    .b_15_0{
+        border-radius: 0 !important;
+    }
+}
+@media (max-width: 750px) {
+    .b_15,.b_15_1001,.b_15_0110,.b_15_1100,.b_15_0011,.b_15_1000,.b_15_0100.b_15_0100,.b_15_0001,.b_15_0010{
+        border-radius: 0 0 0 0 !important;
+    }
+}
+/*style for border radious end*/
+
+/*style for mixitup*/
+/* Target Elements
+---------------------------------------------------------------------- */
+
+.mix,
+.gap {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.mix {
+    background: #fff;
+    border-top: .5rem solid currentColor;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.mix:before {
+    content: '';
+    display: inline-block;
+}
+
+.mix.green {
+    color: #91e6c7;
+}
+.mix.ash {
+    color: #86817F;
+}
+
+.mix.pink {
+    color: #d595aa;
+}
+
+.mix.blue {
+    color: #5ecdde;
+}
+
+/* Grid Breakpoints
+---------------------------------------------------------------------- */
+
+/* 2 Columns */
+
+.mix,
+.gap {
+    width: calc(100%/1 - (((1 - 1) * 1rem) / 1));
+/*    width: calc(100%/2 - (((2 - 1) * 1rem) / 2));*/
+}
+
+/* 1 Columns */
+
+@media screen and (max-width: 541px) {
+    .mix,
+    .gap {
+        width: calc(100%/1 - (((1 - 1) * 1rem) / 1));
+    }
+}
+/*end style for mixitup*/
+
+
+
+/**------------------------------------------------------------
+  Search Form start
+ */
+
+.main-search-form-wrapper {
+    z-index: 5;
+    width: 55%;
+    margin: 0 auto;
+    position: relative;
+    border: 2px solid rgba(255, 255, 255, 0.9);
+/*    border-radius: 50px;*/
+    padding: 0 20px;
+}
+
+.main-search-form-wrapper .form-control {
+    background: none;
+    color: #FFF;
+    border: 0;
+    border-radius: 0;
+    padding: 12px 0;
+    height: 50px;
+}
+
+.main-search-form-wrapper .row > div:last-child .form-control {
+    padding-right: 25px;
+    border-left: 1px solid rgba(255, 255, 255, 0.7);
+    padding-left: 20px;
+}
+
+.main-search-form-wrapper .form-control::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.main-search-form-wrapper .form-control:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.main-search-form-wrapper .form-control::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.main-search-form-wrapper .form-holder {
+    margin-right: 10px;
+}
+
+.main-search-form-wrapper .btn-holder {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.main-search-form-wrapper .btn-holder .btn {
+    background: none;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 20px;
+}
+
+.main-search-form-wrapper .btn-holder .btn:hover {
+    padding-right: 15px;
+    color: #33B6CB;
+}
+
+/**------------------------------------------------------------
+  Search Form End
+ */
+
+
+/*Start CSS for Social Media*/
+
+.fa-linkedin, .fa-linkedin-in{
+    color: #1686B0;
+}
+
+.fa-twitter-square, .fa-twitter{
+    color: #1CB7EB;
+}
+
+.fa-facebook-square, .fa-facebook-f{
+    color: #4E71A8;
+}
+
+.fa-google-plus-square, .fa-google-plus-g{
+    color: #E83F3A;
+}
+
+.fa-stack-overflow{
+    color: #F8A000;
+}
+
+.fa-github{
+    color: #333333;
+}
+
+.fa-youtube{
+    color: #E83F3A;
+}
+
+.fa-pinterest{
+   color: #E83F3A;
+}
+
+/*End CSS for Social Media*/

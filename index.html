@@ -14,25 +14,30 @@
 
     <!-- Fontawesome CSS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-    <!-- kit's code here -->
-    <script src="https://kit.fontawesome.com/5566fd1943.js" crossorigin="anonymous"></script>
   
 
     <!-- GoogleFont CSS -->    
-    <link href="https://fonts.googleapis.com/css?family=Cardo|Open+Sans|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Cardo|Open+Sans" rel="stylesheet">
+
+    <!-- animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
 
     <!-- Customize CSS -->    
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/plugin.css">
+    <!-- <link rel="stylesheet" href="css/plugins/priceTag.css"> -->
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" />
 
     <!-- title -->
     <title>Job Search</title>
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="img/favicon.ico" />
-  </head>
-  <body onload="myFunction()" style="margin:0;">
-    <!-- ========Start Loading========= -->
+
+</head>
+<body onload="myFunction()">
+
+<!-- ========Start Loading========= -->
+
   <div class="loading">
       <div class="gooey">
         <span class="dot"></span>
@@ -43,32 +48,1061 @@
         </div>
       </div>
   </div>
-       
-        <div id="header"></div>
-          <div class="content">
-              <p>
-                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-              </p>
-              <p>
-                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-              </p>
-           </div>
 
-               <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!-- ========End Loading========= -->
+
+<!-- ========Start Navbar+Header========= -->      
+  
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light navbar-container">
+    <div class="container ">
+        <a class="navbar-brand" href="#">Job Search <i class="fa fa-search"></i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown megamenu-li">
+              <a class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Employer</a>
+                <div class="dropdown-menu megamenu" aria-labelledby="dropdown01">
+                  <div class="row">       
+                     <div class="col-sm-6 col-lg-4">
+                        <h5>Image</h5>
+                        <img src="https://cdn.pixabay.com/photo/2012/04/26/18/10/businessmen-42691__340.png" alt="..." class="w-100">
+                     </div>
+                     <div class="col-sm-6 col-lg-4 xl-5">
+                        <h5>Links for Employer</h5>
+                        <a class="dropdown-item" href="CreateEmployeeProfile.html">Create Profile</a>
+                        <a class="dropdown-item" href="ViewUpdateCompanyProfile.html">View/Update Profile</a>
+                        <a class="dropdown-item" href="PostJob.html">Post a Job</a>
+                        <a class="dropdown-item" href="ManageJob.html">Manage Job</a>
+                        <!-- <a class="dropdown-item" href="#">View Applicant</a> -->
+                     </div>
+                     <div class="col-sm-6 col-lg-4">
+                      <!-- log in form start -->
+                        <div class="row p-0 m-0">        
+                           <div class="card-container p-0 m-0 manual-flip col-md-12">
+                              <div class="card login_card m-auto  p-0 m-0">
+                                  <div class="front  bg-light  p-0 m-0 b_15" >
+                                      <div class="content  p-0 m-0 b_15">
+                                        <div class="btn-group p-0 m-0 col-md-12" role="group" aria-label="Basic example">
+                                          <button type="button" class="btn btn-secondary m-0 col-md-6 b_15_1000">Login</button>
+                                          <button type="button" class="btn btn-outline-secondary m-0 col-md-6 b_15_0100" onclick="rotateCard(this)">Register</button>
+                                        </div>  
+                                        <div class="d-flex justify-content-center form_container mt-5">
+                                          <form>
+                                            <div class="input-group mb-3">
+                                              <div class="input-group-append">
+                                                <span class="input-group-text b_15_1001"><i class="far fa-envelope"></i></span>
+                                              </div>
+                                              <input type="text" name="" class="form-control input_user b_15_0110" value=""  placeholder="Email">
+                                            </div>
+                                            <div class="input-group mb-2">
+                                              <div class="input-group-append">
+                                                <span class="input-group-text b_15_1001"><i class="fas fa-unlock-alt"></i></span>
+                                              </div>
+                                              <input type="password" name="" class="form-control input_pass b_15_0110" value="" placeholder="Password">
+                                            </div>
+                                            <div class="form-group">
+                                              <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customControlInline">
+                                                <label class="custom-control-label" for="customControlInline">Remember me</label>
+                                              </div>
+                                              <div class="d-flex mt-1 links">
+                                                  <a href="#" class="text-success">Forgot your password?</a>
+                                              </div>
+                                            </div>
+                                          </form>
+                                        </div>
+                                        <div class="d-flex m0 p-0 sticky-bottom login_container">
+                                          <button type="button" name="button" class="btn login_btn b_15_0011">Login</button>
+                                        </div>
+                                      </div>
+                                  </div> <!-- end front panel -->
+                                  <div class="back  p-0 m-0 bg-light b_15">
+                                      <div class="content  p-0 m-0 b_15">
+                                        <div class="btn-group p-0 m-0 col-md-12" role="group" aria-label="Basic example">
+                                          <button type="button" class="btn btn-outline-secondary m-0  col-md-6 b_15_1000" onclick="rotateCard(this)">Login</button>
+                                          <button type="button" class="btn btn-secondary m-0  col-md-6 b_15_0100">Register</button>
+                                        </div>                                        
+                                        <div class="d-flex justify-content-center form_container mt-2">
+                                          <form>
+                                            <div class="input-group mb-2">
+                                              <div class="input-group-append">
+                                                <span class="input-group-text b_15_1001"><i class="far fa-smile-wink"></i></span>
+                                              </div>
+                                              <input type="text" name="Name" class="form-control b_15_0110" value="" placeholder="Name">
+                                            </div>
+                                            <div class="input-group mb-2">
+                                              <div class="input-group-append">
+                                                <span class="input-group-text b_15_1001"><i class="far fa-envelope"></i></span>
+                                              </div>
+                                              <input type="text" name="Email" class="form-control b_15_0110" value="" placeholder="Email">
+                                            </div>
+                                            <div class="input-group mb-2">
+                                              <div class="input-group-append">
+                                                <span class="input-group-text b_15_1001"><i class="fas fa-unlock"></i></span>
+                                              </div>
+                                              <input type="password" name="Password" class="form-control input_pass b_15_0110" value="" placeholder="Password">
+                                            </div>
+                                            <div class="input-group mb-2">
+                                              <div class="input-group-append">
+                                                <span class="input-group-text b_15_1001"><i class="fas fa-lock"></i></span>
+                                              </div>
+                                              <input type="password" name="ConfirmPassword" class="form-control input_pass b_15_0110" value="" placeholder="Confirm Password">
+                                            </div>
+                                          </form>
+                                        </div>
+                                        <div class="d-flex m0 p-0 sticky-bottom login_container">
+                                          <button type="button" name="button" class="btn login_btn b_15_0011">Register</button>
+                                        </div>
+                                      </div>
+                                  </div> <!-- end back panel -->
+                              </div> <!-- end card -->
+                          </div> <!-- end card-container -->
+                      </div>                    
+                    <!-- log in form end -->
+                    </div>
+                    <div class="d-md-none" style="min-height: 350px;"></div>   
+                  </div>
+                </div>
+            </li>
+            <li class="nav-item dropdown megamenu-li">
+              <a class="nav-link dropdown-toggle" href="" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Candidate</a>
+                <div class="dropdown-menu megamenu" aria-labelledby="dropdown02">
+                  <div class="row">
+                    <div class="col-sm-6 col-lg-4">
+                      <h5>Image Slider</h5>
+                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2017/09/02/10/31/learn-2706897__340.jpg" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                              <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2017/02/07/10/07/consulting-2045471__340.jpg" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                              <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2014/06/07/10/49/leave-364178__340.jpg" alt="...">
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                      <h5>Links for Candidate</h5>
+                        <a class="dropdown-item" href="JobList.html">Job List</a>
+                        <!-- <a class="dropdown-item" href="#">Employer List</a> -->
+                        <a class="dropdown-item" href="CreateCandidateProfile.html">Create Profile</a>
+                        <a class="dropdown-item" href="ViewUpdateCandidateProfile.html">View/Update Profile</a>
+                    </div>
+                    <div class="col-sm-12 col-lg-5">
+                    <!-- start log in form -->
+                      <div class="row p-0 m-0">        
+                         <div class="card-container p-0 m-0 manual-flip col-md-12">
+                            <div class="card login_card m-auto  p-0 m-0">
+                                <div class="front  bg-light  p-0 m-0 b_15" >
+                                    <div class="content  p-0 m-0 b_15">
+                                      <div class="btn-group p-0 m-0 col-md-12" role="group" aria-label="Basic example">
+                                        <button type="button" class="btn btn-secondary m-0  col-md-6 b_15_1000">Login</button>
+                                        <button type="button" class="btn btn-outline-secondary m-0  col-md-6 b_15_0100" onclick="rotateCard(this)">Register</button>
+                                      </div>  
+                                      <div class="d-flex justify-content-center form_container mt-5">
+                                        <form>
+                                          <div class="input-group mb-3">
+                                            <div class="input-group-append">
+                                              <span class="input-group-text b_15_1001"><i class="far fa-envelope"></i></span>
+                                            </div>
+                                            <input type="text" name="" class="form-control input_user b_15_0110" value="" placeholder="Email">
+                                          </div>
+                                          <div class="input-group mb-2">
+                                            <div class="input-group-append">
+                                              <span class="input-group-text b_15_1001"><i class="fas fa-unlock-alt"></i></span>
+                                            </div>
+                                            <input type="password" name="" class="form-control input_pass b_15_0110" value="" placeholder="Password">
+                                          </div>
+                                          <div class="form-group">
+                                            <div class="custom-control custom-checkbox">
+                                              <input type="checkbox" class="custom-control-input" id="customControlInline">
+                                              <label class="custom-control-label" for="customControlInline">Remember me</label>
+                                            </div>
+                                            <div class="d-flex mt-1 links">
+                                                <a href="#" class="text-success">Forgot your password?</a>
+                                            </div>
+                                          </div>
+                                        </form>
+                                      </div>
+                                      <div class="d-flex m0 p-0 sticky-bottom login_container">
+                                        <button type="button" name="button" class="btn login_btn b_15_0011">Login</button>
+                                      </div>
+                                    </div>
+                                </div> <!-- end front panel -->
+                                <div class="back  p-0 m-0 bg-light b_15" >
+                                    <div class="content  p-0 m-0 b_15">
+                                      <div class="btn-group p-0 m-0 col-md-12 bg" role="group" aria-label="Basic example">
+                                        <button type="button" class="btn btn-outline-secondary m-0  col-md-6 b_15_1000" onclick="rotateCard(this)">Login</button>
+                                        <button type="button" class="btn btn-secondary m-0  col-md-6 b_15_0100">Register</button>
+                                      </div>                                      
+                                      <div class="d-flex justify-content-center form_container mt-2">
+                                        <form>
+                                          <div class="input-group mb-2">
+                                            <div class="input-group-append">
+                                              <span class="input-group-text b_15_1001"><i class="far fa-smile-wink"></i></span>
+                                            </div>
+                                            <input type="text" name="Name" class="form-control b_15_0110" value="" placeholder="Name">
+                                          </div>
+                                          <div class="input-group mb-2">
+                                            <div class="input-group-append">
+                                              <span class="input-group-text b_15_1001"><i class="far fa-envelope"></i></span>
+                                            </div>
+                                            <input type="text" name="Email" class="form-control b_15_0110" value="" placeholder="Email">
+                                          </div>
+                                          <div class="input-group mb-2">
+                                            <div class="input-group-append">
+                                              <span class="input-group-text b_15_1001"><i class="fas fa-unlock"></i></span>
+                                            </div>
+                                            <input type="password" name="Password" class="form-control input_pass b_15_0110" value="" placeholder="Password">
+                                          </div>
+                                          <div class="input-group mb-2">
+                                            <div class="input-group-append">
+                                              <span class="input-group-text b_15_1001"><i class="fas fa-lock"></i></span>
+                                            </div>
+                                            <input type="password" name="ConfirmPassword" class="form-control input_pass b_15_0110" value="" placeholder="Confirm Password">
+                                          </div>
+                                        </form>
+                                      </div>
+                                      <div class="d-flex m0 p-0 sticky-bottom login_container">
+                                        <button type="button" name="button" class="btn login_btn b_15_0011">Register</button>
+                                      </div>
+                                    </div>
+                                </div> <!-- end back panel -->
+                            </div> <!-- end card -->
+                        </div> <!-- end card-container -->
+                      </div> <!-- end log in form -->
+                    </div>
+                    <div class="d-md-none" style="min-height: 350px;"></div>
+                  </div>
+                </div>
+            </li>
+            <li class="nav-item dropdown megamenu-li">
+              <a class="nav-link dropdown-toggle" href="" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact Us</a>
+                <div class="dropdown-menu megamenu" aria-labelledby="dropdown02">
+                    <div class="row">
+                      <div class="col-sm-12 col-lg-7">
+                      <!-- start contact form -->
+                          <form>
+                            <div class="row box_shadow col-md-12 float-left p-5 m-3 b_15">
+                              <div class="col-md-6 mt-3">
+                                <textarea name="message" class="col-md-12 form-control border border-0 " rows="10" placeholder="Your message" required></textarea>
+                              </div>
+                              <div class="col-md-6">
+                                <div id="send">
+                                  <input class="sendbutton" type="submit" value="Send">
+                                </div>
+                                <div class="line">
+                                  <div id="input">
+                                    <input type="text" name="name" class="form-control rounded-0" placeholder="Name">
+                                    <input type="email" name="email" class="form-control rounded-0" placeholder="E-mail" required>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </form>
+                      <!-- end contact form -->
+                     </div>
+                     <div class="col-sm-12 col-lg-5 float-left pl-5 my-auto">
+                        <div class="text-left">
+                          <h5 class="text-uppercase mb-4 font-weight-bold">Contact</h5>
+                          <p class="text-secondary">
+                            <a herf="#" class="text-secondary nounderline"><i class="fas fa-user-tie mr-3"></i> Muslehuddin Juned</a></p>
+                          <p class="text-secondary">
+                            <a href="https://goo.gl/maps/tC6oem8YLdp" target="_top" class="text-secondary nounderline"><i class="fas fa-home mr-3"></i> 238/1/E, Ahmed Nogor, Mirpur-1, Dhaka</a></p>
+                          <p class="text-secondary">
+                            <a href="mailto:juned@sustipe.com?Subject=Hello%20again" target="_top" class="text-secondary nounderline"><i class="fas fa-envelope mr-3"></i> juned@sustipe.com</a></p>
+                          <p class="text-secondary">
+                            <a herf="#" class="text-secondary nounderline"><i class="fas fa-phone mr-3"></i> +880 1819 57 16 53</a></p>
+                        </div>
+                        <hr>
+                        <div class="mt-2 flex-center text-left">
+                          <!-- Facebook -->
+                          <a class="fb-ic" href="http://www.facebook.com/juned.ipe">
+                            <i class="fab fa-facebook-f fa-lg mr-4"> </i>
+                          </a>
+                          <!-- Twitter -->
+                          <a class="tw-ic" href="https://twitter.com/MuslehudinJuned">
+                            <i class="fab fa-twitter fa-lg white-text mr-4"> </i>
+                          </a>
+                          <!-- Google +-->
+                          <a class="gplus-ic" href="http://www.google.com/+MuslehUddinJuned">
+                            <i class="fab fa-google-plus-g fa-lg white-text mr-4"> </i>
+                          </a>
+                          <!--Linkedin -->
+                          <a class="li-ic" href="https://www.linkedin.com/in/muslehuddinjuned/">
+                            <i class="fab fa-linkedin-in fa-lg white-text mr-4"> </i>
+                          </a>
+                          <!--stack-overflow-->
+                          <a class="so-ic" href="https://stackoverflow.com/users/4750939/muslehuddin-juned">
+                            <i class="fab fa-stack-overflow fa-lg white-text mr-4"></i>
+                          </a>
+                          <!--github-->
+                          <a class="git-ic" href="https://github.com/MuslehuddinJuned">
+                            <i class="fab fa-github fa-lg white-text mr-4"></i>
+                          </a>
+                          <!--youtube-->
+                          <a class="yt-ic" href="https://www.youtube.com/user/Junedbhai">
+                            <i class="fab fa-youtube fa-lg white-text mr-4"></i>
+                          </a>
+                          <!--Pinterest-->
+                          <a class="pin-ic" href="https://www.pinterest.com/MuslehuddinJuned/">
+                            <i class="fab fa-pinterest fa-lg white-text"> </i>
+                          </a>
+                        </div>
+                     </div>
+                    </div>
+                </div>
+            </li>
+          </ul>
+      </div>
+    </div>
+  </nav>
+  <header class="b_15_0">
+  <!-- bannear start -->
+  <div class="container">
+   <div class=" bannear text-center col-md-12 mx-auto b_15_0 pt-5">          
+      <h1 class="text-white text-uppercase text-center pt-5">More than <span style="color: dodgerblue; font-weight: bold;" class="timer">4000</span> Browes Job</h1>
+      <div class="col-md-12 mt-5">
+          <div class="container">
+            <div class="main-search-form-wrapper b_15">                    
+              <form>                    
+                  <div class="form-holder">
+                      <div class="row gap-0">                                
+                          <div class="col-xss-6 col-xs-6 col-sm-6">
+                              <input class="form-control" placeholder="Looking for job">
+                          </div>                                    
+                          <div class="col-xss-6 col-xs-6 col-sm-6">
+                              <input class="form-control" placeholder="Place to work">
+                          </div>                                    
+                      </div>                            
+                  </div>                            
+                  <div class="btn-holder">
+                      <button class="btn"><i class="fab fa-searchengin fa-2x"></i></button>
+                  </div>                        
+              </form>                        
+            </div>
+          </div>
+      </div>    
+    </div>
+  </div>
+  <!-- bannear end -->
+
+
+</header>
+      <!-- ========End Navbar+Header========= -->
+      <!-- ========Start Page Content========= -->
+<section id="JobCategory" class="col-md-12 text-center bg_header mt-1 b_15_0">
+  <div class="container">
+   <div class="card-group col-md-12 bg_header mt-1 py-5">
+      <div class="card col-md-2 bg_header border-0 text-white  my-auto b_15_0">
+        <div class="grow">
+         <i class="fa fa-code mb-3"></i>
+         <div>
+             <h4 class="fontSize">Developer</h4>
+             <p class="timer">126</p>
+         </div> 
+        </div> 
+      </div>
+      <div class="card col-md-2 bg_header border-0 rounded-0 text-white my-auto">
+        <div class="grow">
+         <i class="fa fa-desktop mb-3"></i>
+         <div>
+             <h4 class="fontSize">Technology</h4>
+             <p class="timer">1146</p>
+         </div> 
+        </div> 
+      </div>
+      <div class="card col-md-2 bg_header border-0 rounded-0 text-white my-auto">
+        <div class="grow">
+         <i class="fa fa-chart-pie mb-3"></i>
+         <div>
+             <h4 class="fontSize">Accounting</h4>
+             <p class="timer">62</p>
+         </div>
+        </div>  
+      </div>
+      <div class="card col-m-2 bg_header border-0 rounded-0 text-white my-auto">
+        <div class="grow">
+         <i class="fa fa-user-md mb-3"></i>
+         <div>
+             <h4 class="fontSize">Medical</h4>
+             <p class="timer">86</p>
+         </div> 
+        </div> 
+      </div>
+      <div class="card col-m-2 bg_header border-0 rounded-0 text-white my-auto ">
+        <div class="grow">
+         <i class="fa fa-building mb-3"></i>
+         <div>
+             <h4 class="fontSize">Govorment</h4>
+             <p class="timer">326</p>
+         </div> 
+        </div> 
+      </div>
+      <div class="card col-md-2 bg_header border-0 rounded-0 text-white my-auto">
+        <div class="grow">
+         <i class="fa fa-city mb-3"></i>
+         <div>
+             <h4 class="fontSize">Garments</h4>
+             <p class="timer">2126</p>
+         </div>
+        </div> 
+      </div>
+       
+   </div>
+</div>    
+</section>
+<section id="UsersNumber" class="col-md-12 text-center mt-5 b_15_1001">
+  <div class="container p-0">
+   <div class="card-group col-md-12 mx-auto counter_section_2">
+      <div class="card col-md-3 float-left bg-primary border-0 text-white my-auto p-2 cornerRound b_15_1001">
+        <div class="my-auto">
+         <div class="grow">
+             <h4 class="mb-3"><span class="timer">4235</span>+</h4>
+             <i class="fa fa-briefcase fa-3x mb-2"></i>
+             <p>Jobs Available</p>
+         </div> 
+         </div>
+      </div>
+      <div class="card col-md-3 float-left bg-success border-0 rounded-0 text-white my-auto p-2 cornerRound">
+        <div class="my-auto">
+         <div class="grow">
+             <h4 class="mb-3"><span class="timer">4235</span>+</h4>
+             <i class="fa fa-address-card fa-3x mb-2"></i>
+             <p>Members</p>
+         </div> 
+         </div>
+      </div>
+      <div class="card col-md-3 float-left bg-primary border-0 rounded-0 text-white my-auto p-2 cornerRound">
+        <div class="my-auto">
+         <div class="grow">
+             <h4 class="mb-3"><span class="timer">4235</span>+</h4>
+             <i class="fa fa-file-alt fa-3x mb-2"></i>
+             <p>Resumes</p>
+         </div> 
+         </div>
+      </div>
+      <div class="card col-md-3 float-left bg-success border-0 text-white my-auto p-2 cornerRound b_15_0110">
+        <div class="my-auto">
+         <div class="grow">
+             <h4 class="mb-3"><span class="timer">4235</span>+</h4>
+             <i class="fa fa-industry fa-3x mb-2"></i>
+             <p>Company</p>
+         </div> 
+         </div>
+      </div>
+       
+   </div>
+</div>    
+</section>
+<section id="Jobs" class="mt-2">
+<div class="card-group container">
+    <div class="card-group col-md-8 px-0 b_15 "> 
+        <div class="controls col-md-12 row b_15_1100 py-2 mx-auto mb-2 bg_header">
+            <select class ="select-filter form-control col-md-6 mx-auto b_15 px-auto">
+                <!-- <option value="all" class="b_15">All</option> -->
+                <option value=".green">Featured Job</option>
+                <option value=".blue">Recent Job</option>
+                <option value=".pink">Full-Time</option>
+                <option value=".ash">Part-Time</option>
+            </select>
+        </div>
+        
+    
+        <div class="card-group container-fluid b_15_0011 bg_content"> 
+        <div class="overflow-hidden">
+        <div class="MixItUp mt-3 pr-3 overflow-auto" style="max-height: 650px;">
+            <div class="mix ash">
+                <div class="row p-0 m-0">
+                    <div class="col-md-3">
+                      <img src="https://res-3.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/prhapv8byahq5sr99gvz" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-9">
+                      <div class="card-body">
+                        <h5 style="font-size: 25px"><i class="fa fa-industry"></i> <b>Coats Bangladesh Ltd.</b></h5>
+                        <h5 class="card-title" style="font-size: 20px"><i class="fa fa-briefcase"></i> Assistant/Deputy Manager - Civil</h5>
+                        <p class="card-text"><small class="text-muted"><i class="fa fa-graduation-cap"></i> Graduate in science || 
+                        <i class="fa fa-money-bill"></i> 60K to 80K || <i class="fas fa-history"></i> Part-Time</small></p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mix green">
+                <div class="row p-0 m-0">
+                    <div class="col-md-3">
+                      <img src="https://pbs.twimg.com/profile_images/695289418731634688/Quu6aaVM_400x400.jpg" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-9">
+                      <div class="card-body">
+                        <h5 style="font-size: 25px"><i class="fa fa-industry"></i> <b>Coats Bangladesh Ltd.</b></h5>
+                        <h5 class="card-title" style="font-size: 20px"><i class="fa fa-briefcase"></i> Assistant/Deputy Manager - Civil</h5>
+                        <p class="card-text"><small class="text-muted"><i class="fa fa-graduation-cap"></i> Graduate in science || 
+                        <i class="fa fa-money-bill"></i> 60K to 80K || <i class="fas fa-history"></i> Full-Time</small></p>
+                      </div>
+                    </div>
+                </div>               
+            </div>
+            <div class="mix blue">
+                <div class="row p-0 m-0">
+                    <div class="col-md-3">
+                      <img src="https://cdn.fing.io/images/isp/BD/logo/antaranga_logo.png" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-9">
+                      <div class="card-body">
+                        <h5 style="font-size: 25px"><i class="fa fa-industry"></i> <b>Coats Bangladesh Ltd.</b></h5>
+                        <h5 class="card-title" style="font-size: 20px"><i class="fa fa-briefcase"></i> Assistant/Deputy Manager - Civil</h5>
+                        <p class="card-text"><small class="text-muted"><i class="fa fa-graduation-cap"></i> Graduate in science || 
+                        <i class="fa fa-money-bill"></i> 60K to 80K || <i class="fas fa-history"></i> Full-Time</small></p>
+                      </div>
+                    </div>
+                </div>               
+            </div>
+            <div class="mix pink">
+                <div class="row p-0 m-0">
+                    <div class="col-md-3">
+                      <img src="https://www.akij.net/wp-content/uploads/2019/02/300X300.png" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-9">
+                      <div class="card-body">
+                        <h5 style="font-size: 25px"><i class="fa fa-industry"></i> <b>Coats Bangladesh Ltd.</b></h5>
+                        <h5 class="card-title" style="font-size: 20px"><i class="fa fa-briefcase"></i> Assistant/Deputy Manager - Civil</h5>
+                        <p class="card-text"><small class="text-muted"><i class="fa fa-graduation-cap"></i> Graduate in science || 
+                        <i class="fa fa-money-bill"></i> 60K to 80K || <i class="fas fa-history"></i> Full-Time</small></p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mix green">
+                <div class="row p-0 m-0">
+                    <div class="col-md-3">
+                      <img src="https://cdn.fing.io/images/isp/BD/logo/antaranga_logo.png" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-9">
+                      <div class="card-body">
+                        <h5 style="font-size: 25px"><i class="fa fa-industry"></i> <b>Coats Bangladesh Ltd.</b></h5>
+                        <h5 class="card-title" style="font-size: 20px"><i class="fa fa-briefcase"></i> Assistant/Deputy Manager - Civil</h5>
+                        <p class="card-text"><small class="text-muted"><i class="fa fa-graduation-cap"></i> Graduate in science || 
+                        <i class="fa fa-money-bill"></i> 60K to 80K || <i class="fas fa-history"></i> Full-Time</small></p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mix ash">
+                <div class="row p-0 m-0">
+                    <div class="col-md-3">
+                      <img src="https://res-3.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/prhapv8byahq5sr99gvz" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-9">
+                      <div class="card-body">
+                        <h5 style="font-size: 25px"><i class="fa fa-industry"></i> <b>Coats Bangladesh Ltd.</b></h5>
+                        <h5 class="card-title" style="font-size: 20px"><i class="fa fa-briefcase"></i> Assistant/Deputy Manager - Civil</h5>
+                        <p class="card-text"><small class="text-muted"><i class="fa fa-graduation-cap"></i> Graduate in science || 
+                        <i class="fa fa-money-bill"></i> 60K to 80K || <i class="fas fa-history"></i> Part-Time</small></p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mix pink">
+                <div class="row p-0 m-0">
+                    <div class="col-md-3">
+                      <img src="https://pbs.twimg.com/profile_images/695289418731634688/Quu6aaVM_400x400.jpg" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-9">
+                      <div class="card-body">
+                        <h5 style="font-size: 25px"><i class="fa fa-industry"></i> <b>Coats Bangladesh Ltd.</b></h5>
+                        <h5 class="card-title" style="font-size: 20px"><i class="fa fa-briefcase"></i> Assistant/Deputy Manager - Civil</h5>
+                        <p class="card-text"><small class="text-muted"><i class="fa fa-graduation-cap"></i> Graduate in science || 
+                        <i class="fa fa-money-bill"></i> 60K to 80K || <i class="fas fa-history"></i> Full-Time</small></p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mix blue">
+                <div class="row p-0 m-0">
+                    <div class="col-md-3">
+                      <img src="https://www.akij.net/wp-content/uploads/2019/02/300X300.png" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-9">
+                      <div class="card-body">
+                        <h5 style="font-size: 25px"><i class="fa fa-industry"></i> <b>Coats Bangladesh Ltd.</b></h5>
+                        <h5 class="card-title" style="font-size: 20px"><i class="fa fa-briefcase"></i> Assistant/Deputy Manager - Civil</h5>
+                        <p class="card-text"><small class="text-muted"><i class="fa fa-graduation-cap"></i> Graduate in science || 
+                        <i class="fa fa-money-bill"></i> 60K to 80K || <i class="fas fa-history"></i> Full-Time</small></p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mix green">
+                <div class="row p-0 m-0">
+                    <div class="col-md-3">
+                      <img src="https://hirebangladeshi.com/uploads/company/logo/72edfc40-8f33-4036-b2b4-2684ee2bb7e9/w.png" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-9">
+                      <div class="card-body">
+                        <h5 style="font-size: 25px"><i class="fa fa-industry"></i> <b>Coats Bangladesh Ltd.</b></h5>
+                        <h5 class="card-title" style="font-size: 20px"><i class="fa fa-briefcase"></i> Assistant/Deputy Manager - Civil</h5>
+                        <p class="card-text"><small class="text-muted"><i class="fa fa-graduation-cap"></i> Graduate in science || 
+                        <i class="fa fa-money-bill"></i> 60K to 80K || <i class="fas fa-history"></i> Full-Time</small></p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mix green">
+                <div class="row p-0 m-0">
+                    <div class="col-md-3">
+                      <img src="https://cdn.fing.io/images/isp/BD/logo/antaranga_logo.png" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-9">
+                      <div class="card-body">
+                        <h5 style="font-size: 25px"><i class="fa fa-industry"></i> <b>Coats Bangladesh Ltd.</b></h5>
+                        <h5 class="card-title" style="font-size: 20px"><i class="fa fa-briefcase"></i> Assistant/Deputy Manager - Civil</h5>
+                        <p class="card-text"><small class="text-muted"><i class="fa fa-graduation-cap"></i> Graduate in science || 
+                        <i class="fa fa-money-bill"></i> 60K to 80K || <i class="fas fa-history"></i> Full-Time</small></p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mix blue">
+                <div class="row p-0 m-0">
+                    <div class="col-md-3">
+                      <img src="https://res-3.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/prhapv8byahq5sr99gvz" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-9">
+                      <div class="card-body">
+                        <h5 style="font-size: 25px"><i class="fa fa-industry"></i> <b>Coats Bangladesh Ltd.</b></h5>
+                        <h5 class="card-title" style="font-size: 20px"><i class="fa fa-briefcase"></i> Assistant/Deputy Manager - Civil</h5>
+                        <p class="card-text"><small class="text-muted"><i class="fa fa-graduation-cap"></i> Graduate in science || 
+                        <i class="fa fa-money-bill"></i> 60K to 80K || <i class="fas fa-history"></i> Full-Time</small></p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mix ash">
+                <div class="row p-0 m-0">
+                    <div class="col-md-3">
+                      <img src="https://hirebangladeshi.com/uploads/company/logo/72edfc40-8f33-4036-b2b4-2684ee2bb7e9/w.png" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-9">
+                      <div class="card-body">
+                        <h5 style="font-size: 25px"><i class="fa fa-industry"></i> <b>Coats Bangladesh Ltd.</b></h5>
+                        <h5 class="card-title" style="font-size: 20px"><i class="fa fa-briefcase"></i> Assistant/Deputy Manager - Civil</h5>
+                        <p class="card-text"><small class="text-muted"><i class="fa fa-graduation-cap"></i> Graduate in science || 
+                        <i class="fa fa-money-bill"></i> 60K to 80K || <i class="fas fa-history"></i> Part-Time</small></p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mix green">
+                <div class="row p-0 m-0">
+                    <div class="col-md-3">
+                      <img src="https://pbs.twimg.com/profile_images/695289418731634688/Quu6aaVM_400x400.jpg" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-9">
+                      <div class="card-body">
+                        <h5 style="font-size: 25px"><i class="fa fa-industry"></i> <b>Coats Bangladesh Ltd.</b></h5>
+                        <h5 class="card-title" style="font-size: 20px"><i class="fa fa-briefcase"></i> Assistant/Deputy Manager - Civil</h5>
+                        <p class="card-text"><small class="text-muted"><i class="fa fa-graduation-cap"></i> Graduate in science || 
+                        <i class="fa fa-money-bill"></i> 60K to 80K || <i class="fas fa-history"></i> Full-Time</small></p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mix blue">
+                <div class="row p-0 m-0">
+                    <div class="col-md-3">
+                      <img src="https://www.akij.net/wp-content/uploads/2019/02/300X300.png" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-9">
+                      <div class="card-body">
+                        <h5 style="font-size: 25px"><i class="fa fa-industry"></i> <b>Coats Bangladesh Ltd.</b></h5>
+                        <h5 class="card-title" style="font-size: 20px"><i class="fa fa-briefcase"></i> Assistant/Deputy Manager - Civil</h5>
+                        <p class="card-text"><small class="text-muted"><i class="fa fa-graduation-cap"></i> Graduate in science || 
+                        <i class="fa fa-money-bill"></i> 60K to 80K || <i class="fas fa-history"></i> Full-Time</small></p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mix pink">
+                <div class="row p-0 m-0">
+                    <div class="col-md-3">
+                      <img src="https://hirebangladeshi.com/uploads/company/logo/72edfc40-8f33-4036-b2b4-2684ee2bb7e9/w.png" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-9">
+                      <div class="card-body">
+                        <h5 style="font-size: 25px"><i class="fa fa-industry"></i> <b>Coats Bangladesh Ltd.</b></h5>
+                        <h5 class="card-title" style="font-size: 20px"><i class="fa fa-briefcase"></i> Assistant/Deputy Manager - Civil</h5>
+                        <p class="card-text"><small class="text-muted"><i class="fa fa-graduation-cap"></i> Graduate in science || 
+                        <i class="fa fa-money-bill"></i> 60K to 80K || <i class="fas fa-history"></i> Full-Time</small></p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+<!-- 
+            <div class="gap"></div>
+            <div class="gap"></div>
+            <div class="gap"></div> -->
+        </div> 
+      </div>
+          <nav aria-label="Page navigation example" style="background-color: #dededc !important;" class="mt-3 mx-auto b_15">
+            <ul class="pagination b_15">
+              <li class="page-item b_15">
+                <a class="page-link  text-light bg_header" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                  <span class="sr-only">Previous</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link text-light bg_header" href="#">1</a></li>
+              <li class="page-item"><a class="page-link text-light bg_header" href="#">2</a></li>
+              <li class="page-item"><a class="page-link text-light bg_header" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link text-light bg_header" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </li>
+            </ul>
+          </nav> 
+        </div>
+   
+    
+    </div>
+    <div class="card col-md-4 p-0 border-0 ml-2 imageMargin">
+      <div class="container-fluid p-0 mt-0 bg-danger text-center b_15">
+           <img src="img/jobs-quotes_1.jpg" class="b_15" width="100%" height="100%" alt="quotes_1">
+       </div>
+       <div class="container-fluid px-3 py-2 mt-3 text-center b_15_1100 bg_header">
+           <h3>Jobs by Category</h3>
+       </div>
+       
+       <div class="container-fluid px-3 py-2 mt-1 text-center b_15_0011" style="border-style: solid; border-color: #3A3E64; ">
+           
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><a href="#" style="text-decoration: none">Accounting/Finance <span class="badge badge-success">257</span></a></li>
+              <li class="list-group-item"><a href="#" style="text-decoration: none">Supply Chain <span class="badge badge-success">129</span></a></li>
+              <li class="list-group-item"><a href="#" style="text-decoration: none">Engineer/Architects <span class="badge badge-success">367</span></a></li>
+              <li class="list-group-item"><a href="#" style="text-decoration: none">Garments/Textile <span class="badge badge-success">361</span></a></li>
+              <li class="list-group-item"><a href="#" style="text-decoration: none">Design/Creative <span class="badge badge-success">79</span></a></li>
+              <li class="list-group-item"><a href="#" style="text-decoration: none">IT & Telecommunication <span class="badge badge-success">287</span></a></li>
+              <li class="list-group-item"><a href="#" style="text-decoration: none">NGO/Development <span class="badge badge-success">272</span></a></li>
+              <li class="list-group-item"><a href="#" style="text-decoration: none"><i class="fa fa-plus-circle"></i> more</a></li>
+            </ul>
+           
+        </div>
+
+        
+    </div>
+</div>
+</section>
+<div class="container"><img class="border mt-3 b_15" style="border-color: #4D3078; border-style: solid;" src="img/Resume-Review-Banner_1.jpg" width="100%" alt=""></div>
+<section id="SignUp" class="mt-3 col-md-12">
+    <div class="card-group container">
+        <div class="card col-md-4 text-center mr-2 changeRadious text-muted box_shadow">          
+          <div class="card-body">
+           <i class="fab fa-black-tie display-4"></i>
+            <h5 class="card-title mt-5">I’M AN EMPLOYER</h5>
+            <p class="card-text mt-5">Signed in companies are able to post new job offers, searching for candidate...</p>
+            <a href="#" class="btn btn-primary mt-5 mb-2 b_15 px-5">Register</a>
+          </div>
+        </div>
+        <div class="card col-md-4 text-center mx-2 changeRadious text-muted box_shadow">          
+          <div class="card-body">
+           <i class="fa fa-user display-4"></i>
+            <h5 class="card-title mt-5">I’M AN CANDIDATE</h5>
+            <p class="card-text mt-5">Signed in companies are able to post new job offers, searching for candidate...</p>
+            <a href="#" class="btn btn-primary mt-5 mb-2 b_15 px-5">Register</a>
+          </div>
+        </div>
+        <div class="card col-md-4 text-center ml-2 changeRadious text-muted box_shadow">          
+          <div class="card-body">
+           <i class="fa fa-award display-4"></i>
+            <h5 class="card-title mt-5">Certification Test</h5>
+            <p class="card-text mt-5">Through this test the job seekers can represent themselves in a distinguish manner in front of the employers.</p>
+            <a href="#" class="btn btn-primary mt-4 mb-2 b_15 px-5">Register</a>
+          </div>
+        </div>
+    </div>
+        
+</section>
+<section id="Certificate" class="container mt-5">
+
+  <div class="p-3 b_15_1100 text-center mb-2 bg_header"><h1 class="mx-auto">Certificate Courses</h1></div>
+<div class="card-group b_15_0011 col-md-12 bg_content">
+<div class="col-md-8 p-0 rounded-top" data-spy="scroll" data-target=".navbar" data-offset="0">
+  <div class="col-md-11 box_shadow mb-3 mr-3 b_15 bg-white growX">
+    <div class="row mt-3">
+    <div class="col-md-2 text-white mx-auto b_15_1001 bg_header">
+      <i class="fab fa-asymmetrik fa-4x"></i>
+    </div>
+    <div class="col-md-10">
+      <h4>Project Management with MS Project</h4>
+      <p>1 - 17 October 2019</p>
+    </div>
+    </div>
+  </div>
+  <div class="col-md-11 box_shadow mb-3 mr-3 b_15 bg-white growX">
+    <div class="row">
+    <div class="col-md-2 text-white mx-auto b_15_1001 bg_header">
+      <i class="fab fa-accusoft fa-4x"></i>
+    </div>
+    <div class="col-md-10">
+      <h4>Commercial & Procurement Manager</h4>
+      <p>2 - 28 October 2019</p>
+    </div>
+    </div>
+  </div>
+  <div class="col-md-11 box_shadow mb-3 mr-3 b_15 bg-white growX">
+    <div class="row">
+    <div class="col-md-2 text-white mx-auto b_15_1001 bg_header">
+      <i class="fab fa-asymmetrik fa-4x"></i>
+    </div>
+    <div class="col-md-10">
+      <h4>Certificate Course on Basic Financial Analysis</h4>
+      <p>3 - 15 October 2019</p>
+    </div>
+    </div>
+  </div>
+  <div class="col-md-11 box_shadow mb-3 mr-3 b_15 bg-white growX">
+    <div class="row">
+    <div class="col-md-2 text-white mx-auto b_15_1001 bg_header">
+      <i class="fab fa-audible fa-4x"></i>
+    </div>
+    <div class="col-md-10">
+      <h4>SPSS Statistics</h4>
+      <p>30 Sep - 9 Oct 2019</p>
+    </div>
+    </div>
+  </div>
+  <div class="col-md-11 box_shadow mb-3 mr-3 b_15 bg-white growX">
+    <div class="row">
+    <div class="col-md-2 text-white mx-auto b_15_1001 bg_header">
+      <i class="fab fa-accusoft fa-4x"></i>
+    </div>
+    <div class="col-md-10">
+      <h4>Income Tax Management</h4>
+      <p>8 Oct - 10 Nov 2019</p>
+    </div>
+    </div>
+  </div>
+  <div class="col-md-11 box_shadow mb-3 mr-3 b_15 bg-white growX">
+    <div class="row">
+    <div class="col-md-2 text-white mx-auto b_15_1001 bg_header">
+      <i class="fab fa-amazon-pay fa-4x"></i>
+    </div>
+    <div class="col-md-10">
+      <h4>Customer Service Master Class</h4>
+      <p>15 - 24 Oct 2019</p>
+    </div>
+    </div>
+  </div>
+  <div class="col-md-11 box_shadow mb-3 mr-3 b_15 bg-white growX">
+    <div class="row">
+    <div class="col-md-2 text-white mx-auto b_15_1001 bg_header">      
+      <i class="fab fa-amazon-pay fa-4x"></i>
+    </div>
+    <div class="col-md-10">
+
+      <h4>Retail Sales Master Class</h4>
+      <p>19 Oct - 1 Nov 2019</p>
+    </div>
+    </div>
+  </div>
+
+
+
+
+    </div>
+    <div class="col-md-4 p-0 b_15_0110" style="height: 600px;">
+        <img src="img/jobs-quotes_2.jpg" class="b_15_0110" width="100%" height="100%" alt="">
+    </div>
+    </div>
+</section>
+<div class="clearfix"></div>
+
+<section id="PRICES" class="mt-5">
+  <div class="container mt-3 mb-2">
+  <div class="p-3 b_15 text-center bg_header"><h1 class="mx-auto">Pricing Plan</h1></div>
+    <div class="row">
+        <div class="col-md-4  py-2 pl-3 pr-1">
+            <div class="pricingTable bronze wow animated slideInLeft b_15">
+                <div class="pricingTable-header">
+                    <span class="price-value">15<span class="currency">$</span></span>
+                    <h3 class="title">Bronze</h3>
+                </div>
+                <ul class="pricing-content">
+                    <li>1 Job Ad</li>
+                    <li>30 Days</li>
+                    <li>Standard Positioning</li>
+                    <li>1 Lorem Ipsum</li>
+                </ul>
+                <a href="/register" class="pricingTable-signup col-md-10 col-sm-10">Choose</a>
+            </div>
+        </div>
+        <div class="col-md-4  py-2 px-1">
+            <div class="pricingTable silver wow animated zoomIn b_15">
+                <div class="pricingTable-header">
+                    <span class="price-value">49<span class="currency">$</span></span>
+                    <h3 class="title">Silver</h3>
+                </div>
+                <ul class="pricing-content">
+                    <li>5 Job Ad</li>
+                    <li>45 Days</li>
+                    <li>Extended Positioning</li>
+                    <li>5 Lorem Ipsum</li>
+                </ul>
+                <a href="mailto:juned@sustipe.com?Subject=Business%20Plan" class="pricingTable-signup col-md-10 col-sm-10">Choose</a>
+            </div>
+        </div>
+        <div class="col-md-4  py-2 pl-1 pr-3">
+            <div class="pricingTable gold wow animated slideInRight b_15">
+                <div class="pricingTable-header">
+                    <span class="price-value">99<span class="currency">$</span></span>
+                    <h3 class="title">gold</h3>
+                </div>
+                <ul class="pricing-content">
+                  <li>10 Job Ad</li>
+                  <li>60 Days</li>
+                  <li>Extra Positioning</li>
+                  <li>10 Lorem Ipsum</li>  
+                </ul>
+                <a href="mailto:juned@sustipe.com?Subject=Professional%20Plan" class="pricingTable-signup col-md-10 col-sm-10">Choose</a>
+            </div>
+        </div>
+    </div>
+  </div>
+</section>
+<section id="contact" class="mt-5">
+       <div class="card col-md-12 border-0 p-0" style="float: left; background-color: #3a3e64; border-radius: 0;">
+       <div class="container">
+        <div class="card col-md-3 border-0" style="float: left; background-color: #3a3e64">
+          <div class="card-body p-0 mt-3 mb-3 text-center">
+             <h6 class="text-white mt-5" style="font-family:  Raleway">WHO WE ARE</h6>
+            <p class="card-text FeatureText mt-3 text-justify" style="color: darkgray; font-family: Raleway">This is Photoshop's version of Lom Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum.</p>
+            <p class="card-text FeatureText mt-3 text-justify" style="color: darkgray; font-family: Raleway">Proin akshay handge vel velit auctor
+            aliquet. Aenean sollicitudin.</p>
+            <h6 class="text-white mt-5" style="font-family:  Raleway">
+                <i class="fa fa-plus-circle"></i> <a class="text-white" href="AboutUs.html" style="text-decoration: none">READ MORE</a></h6>
+
+          </div>
+        </div>
+        <div class="card col-md-3 border-0" style="float: left; background-color: #3a3e64">
+          <div class="card-body p-0 mt-3 mb-3 text-center">
+             <h6 class="text-white mt-5" style="font-family: Raleway">FOR CANDIDATE</h6>
+             <div>
+               <ul class="list-group list-group-flush">
+                  <li class="list-group-item" style="background-color:#3a3e64; "><a class="text-muted" style="text-decoration: none" href="#">Add a Resume</a></li>
+                  <li class="list-group-item" style="background-color:#3a3e64; "><a class="text-muted" style="text-decoration: none" href="#">Candidate Dashboard</a></li>
+                  <li class="list-group-item" style="background-color:#3a3e64; "><a class="text-muted" style="text-decoration: none" href="#">Past Applications</a></li>
+                  <li class="list-group-item" style="background-color:#3a3e64; "><a class="text-muted" style="text-decoration: none" href="#">Job Alerts</a></li>
+                  <li class="list-group-item" style="background-color:#3a3e64; "><a class="text-muted" style="text-decoration: none" href="#">My Account</a></li>
+                </ul>
+            </div> 
+          </div>
+        </div>
+        <div class="card col-md-3 border-0" style="float: left; background-color: #3a3e64">
+          <div class="card-body p-0 mt-3 mb-3 text-center">
+             <h6 class="text-white mt-5" style="font-family: Raleway">FOR EMPLOYERS</h6>
+             <div>
+               <ul class="list-group list-group-flush">
+                  <li class="list-group-item" style="background-color:#3a3e64; "><a class="text-muted" style="text-decoration: none" href="#">Browse Candidates</a></li>
+                  <li class="list-group-item" style="background-color:#3a3e64; "><a class="text-muted" style="text-decoration: none" href="#">Employer Dashboard</a></li>
+                  <li class="list-group-item" style="background-color:#3a3e64; "><a class="text-muted" style="text-decoration: none" href="#">Add Job</a></li>
+                  <li class="list-group-item" style="background-color:#3a3e64; "><a class="text-muted" style="text-decoration: none" href="#">Job Page</a></li>
+                  <li class="list-group-item" style="background-color:#3a3e64; "><a class="text-muted" style="text-decoration: none" href="#">My Account</a></li>
+                </ul>
+            </div> 
+          </div>
+        </div>
+        <div class="card col-md-3 border-0" style="float: left; background-color: #3a3e64">
+          <div class="card-body p-0 mt-3 mb-3 text-center">
+             <h6 class="text-white mt-5" style="font-family: Raleway">INFORMATION</h6>
+             <div>
+               <ul class="list-group list-group-flush">
+                  <li class="list-group-item" style="background-color:#3a3e64; "><a class="text-muted" style="text-decoration: none" href="#">About Us</a></li>
+                  <li class="list-group-item" style="background-color:#3a3e64; "><a class="text-muted" style="text-decoration: none" href="#">Terms & Conditions</a></li>
+                  <li class="list-group-item" style="background-color:#3a3e64; "><a class="text-muted" style="text-decoration: none" href="#">Privacy Policy</a></li>
+                  <li class="list-group-item" style="background-color:#3a3e64; "><a class="text-muted" style="text-decoration: none" href="#">Contact Us</a></li>
+                  <li class="list-group-item" style="background-color:#3a3e64; "><a class="text-muted" style="text-decoration: none" href="#">FAQs</a></li>
+                </ul>
+            </div> 
+          </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<footer>
+    <div class="card col-md-12 border-0 p-0 text-center" style="float: left; background-color: #313454; border-radius: 0;">
+        <div class="card col-md-12 border-0  text-center" style="float: left; background-color: #313454">
+          <div class="card-body p-0 mt-3 mb-3">
+            <p class="card-text FeatureText mt-3" style="color: darkgray; font-family: Raleway">Copyright © 2018 JobSearch. All Rights Reserved<br/>Made with <i class="fa fa-heart" style="color:red;"></i> by <span style="color: white">Muslehuddin Juned</span>.</p>
+          </div>
+        </div>
+    </div>
+</footer>
+
+
+
+      <!-- ========End Page Content========= -->
+
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Other JavaScript File -->
+    <script src="js/wow.min.js"></script>
+    <script src="js/jqu_slickmenu.js"></script>
+    <script src="js/venobox.min.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/mixitup.min.js"></script>
+
 
     <!-- Customized JavaScript -->
     <script src="js/script.js"></script>
+
     <script type="text/javascript">
       $(document).ready(function(){
+        // Customized JavaScript for header Start
         $(function () {
           $("#header").load("pages/header.html");
         });
-      });
-    </script>
+        // Customized JavaScript for header End
 
+      });
+        // initialize wow.js
+      new WOW().init();
+
+
+          // start js for mixitup
+          // In this example, we must bind 'change' event handlers to
+          // our <select> elements, then interact with the mixer via
+          // its .filter() and .sort() API methods.
+
+          var containerEl = document.querySelector('.MixItUp');
+          var selectFilter = document.querySelector('.select-filter');
+
+          var mixer = mixitup(containerEl);
+
+          selectFilter.addEventListener('change', function() {
+              var selector = selectFilter.value;
+
+              mixer.filter(selector);
+          });
+
+          selectSort.addEventListener('change', function() {
+              var order = selectSort.value;
+
+              mixer.sort(order);
+          });
+    </script>
   </body>
 </html>
 
