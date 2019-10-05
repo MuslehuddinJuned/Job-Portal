@@ -1,7 +1,7 @@
 /*-----------------------------------------------------------------------------------
 
-	Theme Name: SUSTipe Job Portal
-	Theme URI: http://
+	Theme Name: SUSTipe Job-Portal
+	Theme URI: https://muslehuddinjuned.github.io/Job-Portal/
 	Description: Job Portal Multiple Page Template
 	Author: Muslehuddin Juned
 	Author URI: https://themeforest.net/user/muslehuddinjuned
@@ -16,17 +16,14 @@
  == Table Of Content
 
 	01 Basics
-	02 Buttons
-	03 Navbar
-	04 Header
-	05 Hero
-	06 Services
-	07 Portfolio
-	08 Blog
-	09 Contact
-	10 Footer
-	11 Responsive
- 
+	02 Bacground
+    03 Pricing Plan
+    04 User Counter
+    05 SignUp
+    06 Border
+    07 Job List
+    08 Search Form
+    09 Social Media 
 
 ---------------------------------------------------------------- */
 
@@ -43,9 +40,18 @@ html, body {
 
 body {
       font-family: Raleway !important;
-/*      font-weight: lighter;*/
 }
+/* ----------------------------------------------------------------
+     [ 01 End Basics ]
+-----------------------------------------------------------------*/
 
+
+
+
+
+/* ----------------------------------------------------------------
+     [ 02 Start Bacground ]
+-----------------------------------------------------------------*/
 /*Start For Bacground*/
 .bg_header{
     background: #3A3E64 !important;
@@ -67,7 +73,16 @@ body {
     border-radius: 0px;
 }
 /*End For Bacground*/
+/* ----------------------------------------------------------------
+     [ 02 End Bacground ]
+-----------------------------------------------------------------*/
 
+
+
+
+/* ----------------------------------------------------------------
+     [ 03 Start Pricing Plan ]
+-----------------------------------------------------------------*/
 .box_shadow{
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	      -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -81,7 +96,10 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
               -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     z-index: 2;
 }
-
+/* ----------------------------------------------------------------
+     [ 03 End Pricing Plan ]
+-----------------------------------------------------------------*/
+/*
 .centered {
   position: fixed;
   top: 50%;
@@ -89,10 +107,13 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     
   margin-top: -25%;
   margin-left: -25%;
-  /* bring your own prefixes */
+ //  bring your own prefixes 
   transform: translate(-50%, -50%);
 }
-
+*/
+/* ----------------------------------------------------------------
+     [ 04 Start User Counter ]
+-----------------------------------------------------------------*/
 /*hover effect*/
 .grow { transition: all .2s ease-in-out; }
 .grow:hover { transform: scale(1.2); }
@@ -102,12 +123,15 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     
   transition: width .5s;
   -webkit-transition: width .5s;
-/*
-    transition:all .5s ease-in-out;
-*/
 }
 .growX:hover { width: 80%}
+/* ----------------------------------------------------------------
+     [ 04 End User Counter ]
+-----------------------------------------------------------------*/
 
+/* ----------------------------------------------------------------
+     [ 05 Start SignUp ]
+-----------------------------------------------------------------*/
 .changeRadious{ 
     border-radius: 15px;
     transition: all .5s ease-in-out;  
@@ -123,11 +147,14 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	      -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	      -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
 }
+/* ----------------------------------------------------------------
+     [ 05 End SignUp ]
+-----------------------------------------------------------------*/
 
 
-
-
-/*style for border radious start*/
+/* ----------------------------------------------------------------
+     [ 06 Start Border ]
+-----------------------------------------------------------------*/
 @media (min-width: 750px) {
     .b_15 {
       border-radius: 15px !important;
@@ -169,12 +196,14 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         border-radius: 0 0 0 0 !important;
     }
 }
-/*style for border radious end*/
 
-/*style for mixitup*/
-/* Target Elements
----------------------------------------------------------------------- */
+/* ----------------------------------------------------------------
+     [ 06 End Border ]
+-----------------------------------------------------------------*/
 
+/* ----------------------------------------------------------------
+     [ 07 Start Job List ]
+-----------------------------------------------------------------*/
 .mix,
 .gap {
     display: inline-block;
@@ -228,14 +257,16 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         width: calc(100%/1 - (((1 - 1) * 1rem) / 1));
     }
 }
-/*end style for mixitup*/
+
+/* ----------------------------------------------------------------
+     [ 07 End Job List ]
+-----------------------------------------------------------------*/
 
 
 
-/**------------------------------------------------------------
-  Search Form start
- */
-
+/* ----------------------------------------------------------------
+     [ 08 Start Search Form ]
+-----------------------------------------------------------------*/
 .main-search-form-wrapper {
     z-index: 5;
     width: 55%;
@@ -294,12 +325,15 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     color: #33B6CB;
 }
 
-/**------------------------------------------------------------
-  Search Form End
- */
+/* ----------------------------------------------------------------
+     [ 08 Start Search Form ]
+-----------------------------------------------------------------*/
 
 
-/*Start CSS for Social Media*/
+
+/* ----------------------------------------------------------------
+     [ 09 Start Social Media ]
+-----------------------------------------------------------------*/
 
 .fa-linkedin, .fa-linkedin-in{
     color: #1686B0;
@@ -332,5 +366,6 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 .fa-pinterest{
    color: #E83F3A;
 }
-
-/*End CSS for Social Media*/
+/* ----------------------------------------------------------------
+     [ 09 End Social Media ]
+-----------------------------------------------------------------*/

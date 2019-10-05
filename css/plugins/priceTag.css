@@ -1,9 +1,10 @@
 /* Price Teg */
 
 .pricingTable{
-    /*background: #fff;*/
+    background: #f1f1f1;
     padding-bottom: 20px;
     overflow: hidden;
+    border-color: #3A3E64;
   -moz-transition: all 1.3s ease;
   -o-transition: all 1.3s ease;
   -webkit-transition: all 1.3s ease;
@@ -41,7 +42,7 @@
     padding: 30px 0;
     float: left;
     font-size: 30px;
-    color: #fff;
+    color: #3A3E64;
     line-height: 20px;
     position: relative;
     top: 10px;
@@ -60,7 +61,7 @@
     margin: 0;
     font-size: 20px;
     font-weight: bold;
-    color: #fff;
+    color: #3A3E64;
     line-height: 20px;
     text-transform: uppercase;
     position: relative;
@@ -76,7 +77,7 @@
 }
 .pricing-content li{
     font-size: 17px;
-    color: #828282;
+    color: #3A3E64;
     line-height: 40px;
 }
 .pricingTable-signup{
@@ -122,6 +123,7 @@
 
 
 .pricingTable:hover{
+    background: #fff;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
 }
 .green .pricingTable-header:before{ background: #18a288; }
@@ -152,11 +154,11 @@
 .gold .pricingTable-signup:before{ border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) gold; }
 .gold .pricingTable-signup:after{ border-color: rgba(0, 0, 0, 0) gold rgba(0, 0, 0, 0) rgba(0, 0, 0, 0); }
 
-.silver .pricingTable-header:before{ background: #B6B6BB; }
-.silver .pricingTable-header:after{ background: #CCCCCC; }
-.silver .pricingTable-signup{ border-color: #CCCCCC; color: #CCCCCC; }
-.silver .pricingTable-signup:before{ border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #B6B6BB; }
-.silver .pricingTable-signup:after{ border-color: rgba(0, 0, 0, 0) #B6B6BB rgba(0, 0, 0, 0) rgba(0, 0, 0, 0); }
+.silver .pricingTable-header:before{ background: #5e5e5e; }
+.silver .pricingTable-header:after{ background: #B6B6BB; }
+.silver .pricingTable-signup{ border-color: #5e5e5e; color: #5e5e5e; }
+.silver .pricingTable-signup:before{ border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #5e5e5e; }
+.silver .pricingTable-signup:after{ border-color: rgba(0, 0, 0, 0) #5e5e5e rgba(0, 0, 0, 0) rgba(0, 0, 0, 0); }
 
 .bronze .pricingTable-header:before{ background: #AD703A; }
 .bronze .pricingTable-header:after{ background: #C3A669; }
